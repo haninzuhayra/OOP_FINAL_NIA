@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="homepage.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+</head>
+<body>
+    <header>
+        <p>Eat The World !<span>
+        <a href="#" style="color:#e0cac8;">Home</a>
+        <a href="planner.html">Planner</a></span></p>
+    </header>
+
+    <br><br>
+    <div class="pics">
+        <h>Cultural ~ Delicious ~ Yummy ~ Full</h><br>
+        <img class="img" src="pasta.jpg">
+        <img class="img" src="potato_salad.jpg">
+        <img class="img" src="tteobokki.jpg">
+        <img class="img" src="shrimp.jpg">
+    </div>
+    <br><br>
+<center>
+    <div class="box">
+        <h1>Hello, Welcome to Eat The World !</h1>
+        <select id="meal-type-dropdown">
+            <option value="">--Select a meal--</option>
+            <option value="English">English</option>
+            <option value="Thai">Thai</option>
+            <option value="Japanese">Japanese</option>
+            <option value="Egyptian">Egyptian</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Tunisian">Tunisian</option>
+            <option value="Greek">Greek</option>
+            <option value="French">French</option>
+        </select>
+        <button id="fetch-meal-btn">SEARCH</button>
+        
+        <div id="meal-container"></div>
+        <script src="homepage.js">
+        </script>
+</center>
+</body>
+</html>

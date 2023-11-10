@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="planner.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <title>Meal Planner</title>
+    <script>
+		function updateDateTime() {
+			var dateTimeElement = document.getElementById("datetime");
+			var currentDate = new Date();
+			dateTimeElement.innerHTML = currentDate.toLocaleString();
+		}
+
+		window.onload = function() {
+			updateDateTime();
+			setInterval(updateDateTime, 1000);
+		};
+	</script>
+</head>
+<body class="body">
+<center>
+    <header class="header">MealP.</header>
+    <div id="datetime" class="datetime"></div>
+    <div class="main">
+        <div class="title">
+            <h2>Create Your Own Meal Planner !</h2>
+            <p>
+                Having trouble deciding what to eat ?
+                Let's create your meal planner !
+            </p>
+        </div>
+        <form>
+            <div class="form-group">
+                <label>File name :</label>
+                <input id="fileName" type="text" class="form-control" placeholder="___day.txt">
+            </div>
+            <div class="form-group">
+                <label>Meal Planner Details :</label>
+                <left><textarea id="fileContents" class="form-control" rows="7" placeholder="Breakfast: Tuna Sandwich"></textarea></left>
+            </div>
+            <br>
+            <div class="form-group">
+                <button id="btnCreate" class="btn btn-default">Create</button>
+                <button id="btnRead" class="btn btn-default">Read</button>
+                <button id="btnUpdate" class="btn btn-default">Update</button>
+                <button id="btnDelete" class="btn btn-default">Delete</button>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+    <br>
+    <a href="index.html">BACK</a>
+</center>
+</body>
+</html>
